@@ -1,0 +1,56 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #008080;
+    padding: 30px;
+}
+
+span {
+    font-size: 27px;
+    text-align: center;
+}
+
+img {
+    margin: 20px;
+    width: 240px;
+    border-radius: 20px;
+}
+
+button {
+    width: 240px;
+    height: 30px;
+    background-color: #1C1C1C;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #808080;
+}
+
+button:active {
+    background-color: #000000;
+}
+
+p {
+    width: 200px;
+    margin: 20px;
+    font-size: 13px;
+    color: #808080;
+}
+
+h1 {
+    font-size: 20px;
+    margin: 20px;
+}
