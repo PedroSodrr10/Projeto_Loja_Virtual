@@ -1,3 +1,7 @@
-function adicionar(jogo, mensagem) {
-    alert(jogo, mensagem)
+function AdicionarProduto(produto) {
+    alert(produto + " adicionado ao carrinho!");
+} 
+
+function ContarProduto() {
+    document.get 
 }

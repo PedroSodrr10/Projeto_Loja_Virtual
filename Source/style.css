@@ -12,6 +12,14 @@ header {
     padding: 30px;
 }
 
+div {
+    background: #008B8B;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 180px;
+}
+
 span {
     font-size: 27px;
     text-align: center;
