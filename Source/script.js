@@ -1,7 +1,7 @@
-function AdicionarProduto(produto) {
-    alert(produto + " adicionado ao carrinho!");
-} 
+let produtoscarrinho = "Adicionado: "
 
-function ContarProduto() {
-    document.get 
-}
+function adicionarproduto(nomeproduto) {
+    produtoscarrinho = produtoscarrinho + ", " + nomeproduto;
+    document.getElementById("sacola").innerHTML= produtoscarrinho 
+    alert(nomeproduto + " foi adicionado ao carrinho!")
+} 
