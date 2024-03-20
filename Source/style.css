@@ -12,14 +12,6 @@ header {
     padding: 30px;
 }
 
-div {
-    background: #008B8B;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    width: 250px;
-}
-
 span {
     font-size: 27px;
     text-align: center;
@@ -31,7 +23,91 @@ img {
     border-radius: 20px;
 }
 
-button {
+h1 {
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.divHeader {
+    background: #008B8B;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 250px;
+}
+
+.divDescricao {
+    margin: 5px 20px 5px 20px;
+    width: 240px;
+}
+
+.pDescricao {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    font-size: 13px;
+    color: #808080;
+    margin-bottom: 6px;
+}
+
+.pValor {
+    margin: auto;
+    text-align: center;
+    width: 200px;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.divMidia {
+    display: flex;
+    background: #DCDCDC;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin: 10px 10px 5px 30px;
+    width: 200px;
+}
+
+.btnmidia1 {
+    width: 185px;
+    height: 30px;
+    background-color: #A9A9A9;
+    color: #363636;
+    border: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+
+.btnmidia2 {
+    width: 185px;
+    height: 30px;
+    background-color: #A9A9A9;
+    color: #363636;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+
+.btnmidia1:hover {
+    background-color: #C0C0C0;
+}
+
+.btnmidia2:hover {
+    background-color: #C0C0C0;
+}
+
+.btnMidiaSelec {
+    background-color: #1C1C1C
+}
+
+.buttonAdd {
     width: 240px;
     height: 30px;
     background-color: #1C1C1C;
@@ -40,25 +116,13 @@ button {
     border-radius: 15px;
     cursor: pointer;
     display: block;
-    margin: 20px;
+    margin: 20px 0px 5px 20px;
 }
 
-button:hover {
+.buttonAdd:hover {
     background-color: #808080;
 }
 
-button:active {
+.buttonAdd:active {
     background-color: #000000;
-}
-
-p {
-    width: 200px;
-    margin: 20px;
-    font-size: 13px;
-    color: #808080;
-}
-
-h1 {
-    font-size: 20px;
-    margin: 20px;
 }
