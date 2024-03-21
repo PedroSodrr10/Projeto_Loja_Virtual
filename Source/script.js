@@ -28,9 +28,13 @@ function mensagemConfirma() {
 }
 
 function adicionarproduto(nomeproduto) {
-    criarListaProdutos(nomeproduto)
-    adcProdSacola()
-    mensagemConfirma()
+    if (midia == "") {
+        alert("Selecione uma mídia do jogo!")
+    } else {
+        criarListaProdutos(nomeproduto)
+        adcProdSacola()
+        mensagemConfirma()
+    } 
 }
 
 function mensagemBemVindo() {
