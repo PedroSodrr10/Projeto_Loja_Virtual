@@ -2,7 +2,7 @@ let produtoscarrinho = "Adicionado: "
 let separador = true
 let contador = true
 
-function CriarListaProdutos(produto) {
+function criarListaProdutos(produto) {
     if (separador) {
         produtoscarrinho = produtoscarrinho + produto;
     } else {
@@ -11,11 +11,11 @@ function CriarListaProdutos(produto) {
     separador = false;
 }
 
-function AdcProdSacola() {
+function adcProdSacola() {
     document.getElementById("sacola").innerHTML = produtoscarrinho
 }
 
-function MensagemConfirma() {
+function mensagemConfirma() {
     if (contador) {
         alert("Seu produto foi adicionado ao carrinho!")
     }
@@ -23,28 +23,27 @@ function MensagemConfirma() {
 }
 
 function adicionarproduto(nomeproduto) {
-    CriarListaProdutos(nomeproduto)
-    AdcProdSacola()
-    MensagemConfirma()
+    criarListaProdutos(nomeproduto)
+    adcProdSacola()
+    mensagemConfirma()
 }
 
-function MensagemBemVindo() {
+function mensagemBemVindo() {
     alert("Seja Bem vindo(a) à Digital Games PlayStation!")
 }
 
-var botaoMidiaFisica = document.getElementById("btnFisica");
-var botaoMidiaDigital = document.getElementById("btnDigital");
-
-function MidiaSelecionada(event) {
-    var botaoClicado = event.target;
-    if (botaoClicado === botaoMidiaFisica) {
-        botaoMidiaFisica.classList.add("btnMidiaSelec");
-        botaoMidiaDigital.classList.remove("btnMidiaSelec");
-    } else if (botaoClicado === botaoMidiaDigital) {
-        botaoMidiaDigital.classList.add("btnMidiaSelec");
-        botaoMidiaFisica.classList.remove("btnMidiaSelec");
+function destacaBotao(button) {
+    var buttons = document.getElementsByClassName('btnmidia1');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('btnMidiaSelec');
     }
+    buttons = document.getElementsByClassName('btnmidia2');
+    for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove('btnMidiaSelec');
+    }
+    button.classList.add('btnMidiaSelec');
 }
 
-botaoMidiaFisica.addEventListener("click", MidiaSelecionada);
-botaoMidiaDigital.addEventListener("click", MidiaSelecionada);
+function desmarcaBotao(button) {
+    button.classList.remove('btnMidiaSelec');
+}
