@@ -47,3 +47,4 @@ function destacaBotao(button) {
 function desmarcaBotao(button) {
     button.classList.remove('btnMidiaSelec');
 }
+
