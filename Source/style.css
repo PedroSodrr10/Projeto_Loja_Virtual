@@ -8,19 +8,13 @@ body {
 }
 
 header {
-    background-color: #008080;
+    background-color: #144B12;
     padding: 30px;
 }
 
 span {
     font-size: 27px;
     text-align: center;
-}
-
-img {
-    margin: 20px;
-    width: 240px;
-    border-radius: 20px;
 }
 
 h1 {
@@ -30,18 +24,43 @@ h1 {
     margin-bottom: 15px;
 }
 
+.imglogo {
+    border-radius: 10px; 
+    margin: 0px 10px; 
+}
+
+.imgJogos {
+    margin: 20px 20px 20px 20px;
+    width: 240px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.divlogo {
+    display: flex;
+    justify-content: baseline;
+}
+
+.divJogos {
+    display: flex;
+    justify-content: baseline;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 5px 30px;
+    max-width: 1200px;
+}
 
 .divHeader {
-    background: #008B8B;
+    background: #286E26;
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
-    width: 250px;
+    width: auto;
+    max-width: 1000px;
 }
 
 .divDescricao {
-    margin: 5px 20px 5px 20px;
-    width: 240px;
+    margin: 20px 20px 20px 5px;
+    width: fit-content;
 }
 
 .pDescricao {
