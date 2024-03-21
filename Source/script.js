@@ -1,14 +1,19 @@
 let produtoscarrinho = "Adicionado: "
+let midia = ""
 let separador = true
 let contador = true
 
 function criarListaProdutos(produto) {
     if (separador) {
-        produtoscarrinho = produtoscarrinho + produto;
+        produtoscarrinho = produtoscarrinho + produto + midia;
     } else {
-        produtoscarrinho = produtoscarrinho + ", " + produto;
+        produtoscarrinho = produtoscarrinho + ", " + produto + midia;
     }
     separador = false;
+}
+
+function capturaMidia(midiacapturada) {
+    midia = " - " + midiacapturada
 }
 
 function adcProdSacola() {
@@ -34,16 +39,12 @@ function mensagemBemVindo() {
 
 function destacaBotao(button) {
     var buttons = document.getElementsByClassName('btnmidia1');
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('btnMidiaSelec');
-    }
     buttons = document.getElementsByClassName('btnmidia2');
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].classList.remove('btnMidiaSelec');
-    }
     button.classList.add('btnMidiaSelec');
 }
 
 function desmarcaBotao(button) {
     button.classList.remove('btnMidiaSelec');
 }
+
+
