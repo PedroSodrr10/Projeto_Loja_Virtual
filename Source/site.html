@@ -15,7 +15,8 @@
 <body OnLoad="MensagemBemVindo()">
     <header>
         <div class="divlogo">
-            <img class="imglogo" src="file:///C:/Users/teste/Downloads/Digital%20Games%20psn.jpg" alt="Digital Games PSN">
+            <img class="imglogo" src="file:///C:/Users/teste/Downloads/Digital%20Games%20psn.png"
+                alt="Digital Games PSN">
             <div class="divHeader" id="sacola">Sacola: nenhum item</div>
         </div>
     </header>
@@ -23,71 +24,161 @@
         <div class="divJogos">
             <div class="divDescricao">
                 <img class="imgJogos" src="https://m.media-amazon.com/images/I/61xj58FOB+L._AC_SL1020_.jpg" alt="">
-                <h1>Elden Ring - PS4</h1>
+                <h1 class="h1Jogo">Elden Ring - PS4</h1>
                 <p class="pDescricao">Jogo completo mídia física.</p>
                 <p class="pDescricao">Opção de mídia digital ou física</p>
                 <p class="pDescricao">Entrega para todo o Brasil!</p>
                 <p class="pValor">R$ 229,90</p>
-                <button class="buttonAdd" onclick="adicionarproduto('Elden Ring')">Adicionar</button>
+                <button class="buttonAdd" onclick="adicionarProduto('Elden Ring')">Adicionar</button>
                 <div class="divMidia">
-                    <button class="btnmidia1" onclick="capturaMidia('M.Física') " onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia física</button>
-                    <button class="btnmidia2" onclick="capturaMidia('M.Digital')" onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia digital</button>
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
                 </div>
             </div>
             <div class="divDescricao">
                 <img class="imgJogos" src="https://m.media-amazon.com/images/I/81DK-nYLmLL._AC_SL1500_.jpg" alt="">
-                <h1>Sekiro - PS4</h1>
+                <h1 class="h1Jogo">Sekiro - PS4</h1>
                 <p class="pDescricao">Jogo completo mídia física.</p>
                 <p class="pDescricao">Opção de mídia digital ou física</p>
                 <p class="pDescricao">Entrega para todo o Brasil!</p>
                 <p class="pValor">R$ 323,99</p>
-                <button class="buttonAdd" onclick="adicionarproduto('Sekiro - PS4')">Adicionar</button>
+                <button class="buttonAdd" onclick="adicionarProduto('Sekiro - PS4')">Adicionar</button>
                 <div class="divMidia">
-                    <button class="btnmidia1" onclick="capturaMidia('M.Física') " onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia física</button>
-                    <button class="btnmidia2" onclick="capturaMidia('M.Digital')" onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia digital</button>
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
                 </div>
             </div>
             <div class="divDescricao">
                 <img class="imgJogos" src="https://m.media-amazon.com/images/I/81Q47VAr6vL._AC_SL1500_.jpg" alt="">
-                <h1>Cyberpunk 2077 - PS4</h1>
+                <h1 class="h1Jogo">Cyberpunk 2077 - PS4</h1>
                 <p class="pDescricao">Jogo completo mídia física.</p>
                 <p class="pDescricao">Opção de mídia digital ou física</p>
                 <p class="pDescricao">Entrega para todo o Brasil!</p>
                 <p class="pValor">R$ 179,00</p>
-                <button class="buttonAdd" onclick="adicionarproduto('Cyberpunk 2077 - PS4')">Adicionar</button>
+                <button class="buttonAdd" onclick="adicionarProduto('Cyberpunk 2077 - PS4')">Adicionar</button>
                 <div class="divMidia">
-                    <button class="btnmidia1" onclick="capturaMidia('M.Física') " onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia física</button>
-                    <button class="btnmidia2" onclick="capturaMidia('M.Digital')" onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia digital</button>
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
                 </div>
             </div>
             <div class="divDescricao">
                 <img class="imgJogos" src="https://m.media-amazon.com/images/I/81sYgmCGRyL._AC_SL1500_.jpg" alt="">
-                <h1>God of War Ragnarok - PS4</h1>
+                <h1 class="h1Jogo">God of War Ragnarok - PS4</h1>
                 <p class="pDescricao">Jogo completo mídia física.</p>
                 <p class="pDescricao">Opção de mídia digital ou física</p>
                 <p class="pDescricao">Entrega para todo o Brasil!</p>
                 <p class="pValor">R$ 349,00</p>
-                <button class="buttonAdd" onclick="adicionarproduto('God of War Ragnarok - PS4')">Adicionar</button>
+                <button class="buttonAdd" onclick="adicionarProduto('God of War Ragnarok - PS4')">Adicionar</button>
                 <div class="divMidia">
-                    <button class="btnmidia1" onclick="capturaMidia('M.Física') " onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia física</button>
-                    <button class="btnmidia2" onclick="capturaMidia('M.Digital')" onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia digital</button>
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
                 </div>
             </div>
             <div class="divDescricao">
-                <img class="imgJogos" src="https://m.media-amazon.com/images/I/61te8AW6zjL._AC_SL1020_.jpg" alt="">
-                <h1>FC24 - PS4</h1>
+                <img class="imgJogos" src="https://m.media-amazon.com/images/I/711eymrSAML._AC_SL1000_.jpg" alt="">
+                <h1 class="h1Jogo">Horizon Forbidden West - PS4</h1>
                 <p class="pDescricao">Jogo completo mídia física.</p>
                 <p class="pDescricao">Opção de mídia digital ou física</p>
                 <p class="pDescricao">Entrega para todo o Brasil!</p>
-                <p class="pValor">R$ 179,00</p>
-                <button class="buttonAdd" onclick="adicionarproduto('FC24 - PS4')">Adicionar</button>
+                <p class="pValor">R$ 79,90</p>
+                <button class="buttonAdd" onclick="adicionarProduto('Horizon Forbidden West - PS4<')">Adicionar</button>
                 <div class="divMidia">
-                    <button class="btnmidia1" onclick="capturaMidia('M.Física') " onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia física</button>
-                    <button class="btnmidia2" onclick="capturaMidia('M.Digital')" onfocus="destacaBotao(this)" onblur="desmarcaBotao(this)">Mídia digital</button>
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
                 </div>
             </div>
         </div>
         <hr />
+        <div class="divJogos">
+            <div class="divDescricao">
+                <img class="imgJogos"
+                    src="https://m.media-amazon.com/images/I/71W1k009P4L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="">
+                <h1 class="h1Jogo">Dragon's Dogma 2 - PS5</h1>
+                <p class="pDescricao">Jogo completo mídia física.</p>
+                <p class="pDescricao">Opção de mídia digital ou física</p>
+                <p class="pDescricao">Entrega para todo o Brasil!</p>
+                <p class="pValor">R$ 359,90</p>
+                <button class="buttonAdd" onclick="adicionarProduto('Dragons Dogma 2 - PS5')">Adicionar</button>
+                <div class="divMidia">
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
+                </div>
+            </div>
+            <div class="divDescricao">
+                <img class="imgJogos" src="https://m.media-amazon.com/images/I/61KU9GYqDPL._AC_SL1000_.jpg" alt="">
+                <h1 class="h1Jogo">The Last of Us pt.II Remastered - PS5</h1>
+                <p class="pDescricao">Jogo completo mídia física.</p>
+                <p class="pDescricao">Opção de mídia digital ou física</p>
+                <p class="pDescricao">Entrega para todo o Brasil!</p>
+                <p class="pValor">R$ 211,99</p>
+                <button class="buttonAdd"
+                    onclick="adicionarProduto('The Last of Us pt.II Remastered - PS5')">Adicionar</button>
+                <div class="divMidia">
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
+                </div>
+            </div>
+            <div class="divDescricao">
+                <img class="imgJogos" src="https://m.media-amazon.com/images/I/81RfcW3Ml-L._AC_SL1500_.jpg" alt="">
+                <h1 class="h1Jogo">Spider-Man 2 - PS5</h1>
+                <p class="pDescricao">Jogo completo mídia física.</p>
+                <p class="pDescricao">Opção de mídia digital ou física</p>
+                <p class="pDescricao">Entrega para todo o Brasil!</p>
+                <p class="pValor">R$ 284,90</p>
+                <button class="buttonAdd" onclick="adicionarProduto('Spider-Man 2 - PS5')">Adicionar</button>
+                <div class="divMidia">
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
+                </div>
+            </div>
+            <div class="divDescricao">
+                <img class="imgJogos" src="https://m.media-amazon.com/images/I/81sYgmCGRyL._AC_SL1500_.jpg" alt="">
+                <h1 class="h1Jogo">God of War Ragnarok - PS5</h1>
+                <p class="pDescricao">Jogo completo mídia física.</p>
+                <p class="pDescricao">Opção de mídia digital ou física</p>
+                <p class="pDescricao">Entrega para todo o Brasil!</p>
+                <p class="pValor">R$ 349,00</p>
+                <button class="buttonAdd" onclick="adicionarProduto('God of War Ragnarok - PS5')">Adicionar</button>
+                <div class="divMidia">
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
+                </div>
+            </div>
+            <div class="divDescricao">
+                <img class="imgJogos" src="https://m.media-amazon.com/images/I/61wggeHUGfL._AC_SL1000_.jpg" alt="">
+                <h1 class="h1Jogo">Avatar Frontiers of Pandora - PS5</h1>
+                <p class="pDescricao">Jogo completo mídia física.</p>
+                <p class="pDescricao">Opção de mídia digital ou física</p>
+                <p class="pDescricao">Entrega para todo o Brasil!</p>
+                <p class="pValor">R$ 279,90</p>
+                <button class="buttonAdd"
+                    onclick="adicionarProduto('Avatar Frontiers of Pandora - PS5<')">Adicionar</button>
+                <div class="divMidia">
+                    <button class="btnmidia1" onclick="selecionarMidia('M.Física') " onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia física</button>
+                    <button class="btnmidia2" onclick="selecionarMidia('M.Digital')" onfocus="destacaBotao(this)"
+                        onblur="desmarcaBotao(this)">Mídia digital</button>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
     </footer>
