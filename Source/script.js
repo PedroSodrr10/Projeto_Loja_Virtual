@@ -1,44 +1,44 @@
-let produtoscarrinho = "Adicionado: "
-let midia = ""
-let separador = true
-let contador = true
+let carrinho = "Adicionado: ";
+let mediaSelecionada = "";
+let separadorNecessario = true;
+let contadorMensagens = true;
 
-function criarListaProdutos(produto) {
-    if (separador) {
-        produtoscarrinho = produtoscarrinho + produto + midia;
+function adicionarProdutoAoCarrinho(produto) {
+    if (separadorNecessario) {
+        carrinho += produto + mediaSelecionada;
     } else {
-        produtoscarrinho = produtoscarrinho + ", " + produto + midia;
+        carrinho += ", " + produto + mediaSelecionada;
     }
-    separador = false;
+    separadorNecessario = false;
 }
 
-function capturaMidia(midiacapturada) {
-    midia = " - " + midiacapturada
+function selecionarMidia(midia) {
+    mediaSelecionada = " - " + midia;
 }
 
-function adcProdSacola() {
-    document.getElementById("sacola").innerHTML = produtoscarrinho
+function atualizarSacola() {
+    document.getElementById("sacola").innerHTML = carrinho;
 }
 
-function mensagemConfirma() {
-    if (contador) {
-        alert("Seu produto foi adicionado ao carrinho!")
+function exibirMensagemConfirmacao() {
+    if (contadorMensagens) {
+        alert("Seu produto foi adicionado ao carrinho!");
     }
-    contador = false
+    contadorMensagens = false;
 }
 
-function adicionarproduto(nomeproduto) {
-    if (midia == "") {
-        alert("Selecione uma mídia do jogo!")
+function adicionarProduto(nomeProduto) {
+    if (mediaSelecionada == "") {
+        alert("Selecione uma mídia do jogo!");
     } else {
-        criarListaProdutos(nomeproduto)
-        adcProdSacola()
-        mensagemConfirma()
+        adicionarProdutoAoCarrinho(nomeProduto);
+        atualizarSacola();
+        exibirMensagemConfirmacao();
     } 
 }
 
-function mensagemBemVindo() {
-    alert("Seja Bem vindo(a) à Digital Games PlayStation!")
+function exibirMensagemBemVindo() {
+    alert("Seja bem-vindo(a) à Digital Games PlayStation!");
 }
 
 function destacaBotao(button) {
