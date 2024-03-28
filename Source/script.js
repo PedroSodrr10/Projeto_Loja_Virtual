@@ -23,8 +23,9 @@ function atualizarSacola() {
 function exibirMensagemConfirmacao() {
     if (contadorMensagens) {
         alert("Seu produto foi adicionado ao carrinho!");
+        contadorMensagens = false;
     }
-    contadorMensagens = false;
+    
 }
 
 function adicionarProduto(nomeProduto) {
