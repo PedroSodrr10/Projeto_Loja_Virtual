@@ -1,28 +1,30 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 header {
     background-color: #003FA7;
-    padding: 30px;
+    padding: 2rem; 
 }
 
 span {
-    font-size: 27px;
+    font-size: 1.7rem;
     text-align: center;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 1.25rem; 
     margin: auto;
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 1rem; 
 }
 
 div {
     justify-content: baseline;
     display: flex;
+    flex-wrap: wrap;
 }
 
 button {
@@ -34,51 +36,56 @@ button {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
-    margin-bottom: 10px;
-  }
+    width: 100%; 
+    max-width: 200px;
+    margin-bottom: 0.625rem;
+}
 
 .imglogo {
     border-radius: 10px;
-    margin: 0px 10px;
+    margin: 0px 1rem; 
 }
 
 .imgJogos {
-    margin: 20px 20px 20px 20px;
-    width: 240px;
+    margin: 1.25rem; 
+    width: 100%; 
+    max-width: 240px; 
     border-radius: 20px;
-    height: 300px;
+    height: auto; 
 }
 
 .pDescricao {
     margin: auto;
     text-align: center;
-    width: 200px;
-    font-size: 13px;
+    width: 100%;
+    max-width: 200px;
+    font-size: 0.8125rem;
     color: #808080;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .pValor {
     margin: auto;
     text-align: center;
-    width: 200px;
-    font-size: 30px;
+    width: 100%; 
+    max-width: 200px; 
+    font-size: 1.875rem; 
     color: #000000;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .divJogos {
-    padding: 10px 10px 10px 10px;
-    margin: 10px 10px 5px 30px;
+    padding: 0.625rem; 
+    margin: 0.625rem; 
     max-width: 1200px;
+    width: 100%; 
 }
 
 .divHeader {
     background: #BEC6D3;
-    padding: 10px;
+    padding: 0.625rem;
     border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     width: auto;
     max-width: 1000px;
 }
@@ -86,17 +93,18 @@ button {
 .divDescricao {
     flex-direction: column;
     align-items: center;
-    margin: 20px 20px 20px 5px;
+    margin: 1.25rem; 
     width: fit-content;
 }
 
 .divMidia {
     flex-direction: row;
     background: #5E8EDE;
-    padding: 10px 10px 10px 10px;
+    padding: 0.625rem; 
     border-radius: 10px;
-    margin: 10px 10px 5px 30px;
-    width: 200px;
+    margin: 0.625rem; 
+    width: 100%; 
+    max-width: 200px; 
 }
 
 .btnmidia {
@@ -105,8 +113,8 @@ button {
     background-color: #1E54AC;
     color: #ffffff;
     border-radius: 10px;
-    padding: 5px 5px 5px 5px;
-    margin: 0 5px;
+    padding: 0.3125rem; 
+    margin: 0 0.3125rem;
 }
 
 .btnmidia:hover {
@@ -114,17 +122,18 @@ button {
 }
 
 .btnMidiaSelec {
-    background-color: #366cff
+    background-color: #366cff;
 }
 
 .buttonAdd {
-    width: 240px;
+    width: 100%; 
+    max-width: 240px; 
     height: 30px;
     background-color: #1C1C1C;
     color: white;
     border-radius: 15px;
     display: block;
-    margin: 20px 0px 5px 20px;
+    margin: 1.25rem 0 0.3125rem 0;
 }
 
 .buttonAdd:hover {
@@ -133,4 +142,19 @@ button {
 
 .buttonAdd:active {
     background-color: #000000;
+}
+
+@media (max-width: 768px) {
+    .divJogos {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .imgJogos {
+        width: 90%; 
+    }
+
+    .divMidia {
+        width: 90%;
+    }
 }
